@@ -465,17 +465,10 @@ Author URL: http://w3layouts.com
 
     <!-- Service Worker -->
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then((reg) => {
-                        console.log('Sucesso ao registrar o service worker', reg);
-                    }).catch((err) => {
-                        console.log('Algo deu errado', err);
-                    });
-            });
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('service-work.js')
         }
-    </script>
+      </script>      
     <!-- //Service Worker -->
 
     <!-- move top -->

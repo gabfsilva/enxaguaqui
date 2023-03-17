@@ -15,7 +15,6 @@ Author URL: http://w3layouts.com
         rel="stylesheet">
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
-    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -211,21 +210,6 @@ Author URL: http://w3layouts.com
     <!-- //footer -->
 
     <!-- Js scripts -->
-
-    <!-- Service Worker -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then((reg) => {
-                        console.log('Sucesso ao registrar o service worker', reg);
-                    }).catch((err) => {
-                        console.log('Algo deu errado', err);
-                    });
-            });
-        }
-    </script>
-    <!-- //Service Worker -->
 
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
