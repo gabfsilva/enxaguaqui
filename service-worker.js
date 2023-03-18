@@ -5,13 +5,7 @@ const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/assets/css/style-starter.css',
-  '/assets/videos/video.mp4',
-  '/assets/js/bootstrap.min.js',
-  '/assets/js/counter.js',
-  '/assets/js/jquery-3.3.1.min.js',
-  '/assets/js/owl-carousel.js',
-  '/assets/js/theme-change.js'
+  '/assets/css/style-starter.css'
 ];
 
 // Registra o Service Worker
